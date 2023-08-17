@@ -14,10 +14,10 @@ int main()
     cin >> n;
     while (n) {
         if (n % 2 != 0) {
-            s += pow(-1, n - 1) * pow(x, n) / n;
+            s += pow(-1, n + 1) * pow(x, n) / n;
         }
         else {
-            s -= pow(-1, n - 1) * pow(x, n) / n;
+            s -= pow(-1, n + 1) * pow(x, n) / n;
         }
         n--;
     }
